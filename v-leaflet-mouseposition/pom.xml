@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.vaadin.addons</groupId>
     <artifactId>v-leaflet-mouseposition</artifactId>
-    <version>1.0.4</version>
+    <version>0.0.1</version>
     <name>V-Leaflet MousePosition extensions</name>
 
     <properties>

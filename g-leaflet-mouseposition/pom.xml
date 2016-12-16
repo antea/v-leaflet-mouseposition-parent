@@ -5,7 +5,7 @@
 	<!-- POM file generated with GWT webAppCreator -->
 	<modelVersion>4.0.0</modelVersion>
 
-	<version>1.0.4</version>
+	<version>0.0.1</version>
 	<groupId>org.vaadin.addons</groupId>
 	<artifactId>g-leaflet-mouseposition</artifactId>
 	<packaging>jar</packaging>
