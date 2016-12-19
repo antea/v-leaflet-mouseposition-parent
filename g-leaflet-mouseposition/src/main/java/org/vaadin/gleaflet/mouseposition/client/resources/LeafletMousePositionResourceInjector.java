@@ -24,8 +24,8 @@ public class LeafletMousePositionResourceInjector {
      * Override this with deferred binding to customize injected stuff
      */
     protected void injectResources() {
+        bundle.mousePositionStyle().ensureInjected();
         ScriptInjector.fromString(bundle.mousePositionScript().getText()).setWindow(nativeTopWindow()).inject();
-        ScriptInjector.fromString(bundle.mousePositionStyle().getText()).setWindow(nativeTopWindow()).inject();
     }
 
     private static native JavaScriptObject nativeTopWindow()

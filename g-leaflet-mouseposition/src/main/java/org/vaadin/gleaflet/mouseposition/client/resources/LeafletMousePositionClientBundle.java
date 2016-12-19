@@ -1,6 +1,7 @@
 package org.vaadin.gleaflet.mouseposition.client.resources;
 
 import com.google.gwt.resources.client.ClientBundle;
+import com.google.gwt.resources.client.CssResource;
 import com.google.gwt.resources.client.TextResource;
 
 /**
@@ -12,5 +13,6 @@ public interface LeafletMousePositionClientBundle extends ClientBundle {
     TextResource mousePositionScript();
 
     @Source("L.Control.MousePosition.css")
-    TextResource mousePositionStyle();
+    @CssResource.NotStrict
+    CssResource mousePositionStyle();
 }
