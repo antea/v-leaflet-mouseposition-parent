@@ -1,16 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.vaadin.addons</groupId>
     <artifactId>v-leaflet-mouseposition</artifactId>
-    <version>0.0.1</version>
+    <packaging>jar</packaging>
     <name>V-Leaflet MousePosition extensions</name>
+
+    <parent>
+        <artifactId>v-leaflet-mouseposition-parent</artifactId>
+        <groupId>org.vaadin.addons</groupId>
+        <version>0.0.2</version>
+    </parent>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <vaadin.version>7.6.8</vaadin.version>
         <v-leaflet-version>1.0.3</v-leaflet-version>
-        <g-leaflet-mouseposition-version>${project.version}</g-leaflet-mouseposition-version>
     </properties>
 
     <organization>
@@ -20,10 +25,9 @@
 
     <licenses>
         <license>
-            <name>Apache 2</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
             <distribution>repo</distribution>
-            <comments>A business-friendly OSS license</comments>
         </license>
     </licenses>
 
@@ -233,7 +237,7 @@
         <dependency>
             <groupId>org.vaadin.addons</groupId>
             <artifactId>g-leaflet-mouseposition</artifactId>
-            <version>${g-leaflet-mouseposition-version}</version>
+            <version>${project.version}</version>
             <!-- Only needed during widgetset compilation, so provided scope would 
             be great for this, but with it is left out from widgetset compilation by 
             vaadin plugin -->
@@ -251,14 +255,12 @@
             <version>${vaadin.version}</version>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-themes</artifactId>
             <version>${vaadin.version}</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>org.vaadin</groupId>
             <artifactId>addon-test-helpers</artifactId>
@@ -266,14 +268,11 @@
             <scope>test</scope>
         </dependency>
 
-
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.10</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
-
 </project>
