@@ -3,14 +3,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>v-leaflet-mouseposition</artifactId>
+    <groupId>org.vaadin.addons</groupId>
     <packaging>jar</packaging>
     <name>V-Leaflet MousePosition extensions</name>
-
-    <parent>
-        <artifactId>v-leaflet-mouseposition-parent</artifactId>
-        <groupId>org.vaadin.addons</groupId>
-        <version>0.0.2</version>
-    </parent>
+    <version>0.0.3</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
