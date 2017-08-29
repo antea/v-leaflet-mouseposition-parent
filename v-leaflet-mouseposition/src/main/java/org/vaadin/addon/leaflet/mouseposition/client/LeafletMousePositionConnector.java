@@ -14,7 +14,17 @@ public class LeafletMousePositionConnector<T> extends AbstractControlConnector<M
     }
 
     @Override
+    public MousePositionState getState() {
+        return (MousePositionState) super.getState();
+    }
+
+    @Override
     protected MousePosition createControl() {
-        return MousePosition.create(getMap());
+        MousePositionState state = getState();
+        if ("".equals(state.latPrefix)) {
+            return MousePosition.create(getMap());
+        } else {
+            return MousePosition.create(getMap(), state.latPrefix, state.lonPrefix);
+        }
     }
 }

@@ -29,7 +29,7 @@ public class MousePositionTest extends AbstractTest {
         osm.setDetectRetina(true);
         leafletMap.addBaseLayer(osm, "Open Street Map");
 
-        leafletMap.addControl(new LMousePosition());
+        leafletMap.addControl(new LMousePosition("Lat", "Lon"));
 
         return leafletMap;
     }
