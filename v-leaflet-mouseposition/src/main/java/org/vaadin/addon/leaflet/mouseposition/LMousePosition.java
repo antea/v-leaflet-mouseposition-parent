@@ -12,12 +12,21 @@ public class LMousePosition extends AbstractDefaultControl {
         setLonPrefix(lonPrefix);
     }
 
+    public LMousePosition(String latPrefix, String lonPrefix, int numDigits) {
+        this(latPrefix, lonPrefix);
+        setNumDigits(numDigits);
+    }
+
     public void setLonPrefix(String lonPrefix) {
         getState().lonPrefix = lonPrefix;
     }
 
     public void setLatPrefix(String latPrefix) {
         getState().latPrefix = latPrefix;
+    }
+
+    public void setNumDigits(int numDigits) {
+        getState().numDigits = numDigits;
     }
 
     @Override
