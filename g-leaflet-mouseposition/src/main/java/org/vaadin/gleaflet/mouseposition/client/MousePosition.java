@@ -25,4 +25,14 @@ public class MousePosition extends Control {
             result.addTo(map);
             return result;
         }-*/;
+
+    public static native MousePosition create(Map map, String latPrefix, String lonPrefix, int numDigits)
+        /*-{
+            var result = $wnd.L.control.mousePosition({
+                lngFormatter: function(l) {return lonPrefix + ' ' + $wnd.L.Util.formatNum(l, numDigits);},
+                latFormatter: function(l) {return latPrefix + ' ' + $wnd.L.Util.formatNum(l, numDigits);}
+            });
+            result.addTo(map);
+            return result;
+        }-*/;
 }

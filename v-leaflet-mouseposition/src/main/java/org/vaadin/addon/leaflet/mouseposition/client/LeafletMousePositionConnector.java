@@ -24,7 +24,9 @@ public class LeafletMousePositionConnector<T> extends AbstractControlConnector<M
         if ("".equals(state.latPrefix)) {
             return MousePosition.create(getMap());
         } else {
-            return MousePosition.create(getMap(), state.latPrefix, state.lonPrefix);
+            return null == state.numDigits
+                    ? MousePosition.create(getMap(), state.latPrefix, state.lonPrefix)
+                    : MousePosition.create(getMap(), state.latPrefix, state.lonPrefix, state.numDigits);
         }
     }
 }
