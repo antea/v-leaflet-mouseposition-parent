@@ -6,7 +6,7 @@
     <groupId>org.vaadin.addons</groupId>
     <packaging>jar</packaging>
     <name>V-Leaflet MousePosition extensions</name>
-    <version>0.0.4</version>
+    <version>0.0.5</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -45,7 +45,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <!-- Implementation-Title and Implementation-Version come from the 
+                            <!-- Implementation-Title and Implementation-Version come from the
                             POM by default -->
                             <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
                         </manifest>
@@ -78,10 +78,10 @@
                 </executions>
             </plugin>
 
-            <!-- This creates a zip file of jar and sources jar. When publishing in 
-            the Directory this makes sources available to maven users automatically. 
-            We could also use this to package required dependecies for those poor developer 
-            souls that still dont know how to use a build system that supports transient 
+            <!-- This creates a zip file of jar and sources jar. When publishing in
+            the Directory this makes sources available to maven users automatically.
+            We could also use this to package required dependecies for those poor developer
+            souls that still dont know how to use a build system that supports transient
             dependencies... -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -148,13 +148,13 @@
 
         <resources>
             <resource>
-                <!-- This add sources, .gwt.xml files etc to jar from source directory. 
+                <!-- This add sources, .gwt.xml files etc to jar from source directory.
                 Not quite maven convention byt easieast to setup this way. -->
                 <directory>src/main/java</directory>
             </resource>
-            <!-- This is here to simplify working with GWT plugin during test widgetset 
-            compilation. Test widgetset is this way more like a real world usage and 
-            also lets your test up to e.g. use other add-ons. Ensure these are excluded 
+            <!-- This is here to simplify working with GWT plugin during test widgetset
+            compilation. Test widgetset is this way more like a real world usage and
+            also lets your test up to e.g. use other add-ons. Ensure these are excluded
             from the artifact ( jar file ). -->
             <resource>
                 <directory>src/test/resources</directory>
@@ -167,8 +167,8 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <configuration>
                         <excludes>
-                            <!-- Files here might match to naming convetions, but the are just 
-                            vaadin apps containing you add-on components in varios setups. We can ignore 
+                            <!-- Files here might match to naming convetions, but the are just
+                            vaadin apps containing you add-on components in varios setups. We can ignore
                             them from test. -->
                             <exclude>**/demoandtestapp/*</exclude>
                         </excludes>
@@ -225,8 +225,8 @@
             <groupId>org.vaadin.addon</groupId>
             <artifactId>v-leaflet</artifactId>
             <version>${v-leaflet-version}</version>
-            <!-- Only needed during widgetset compilation, so provided scope would 
-            be great for this, but with it is left out from widgetset compilation by 
+            <!-- Only needed during widgetset compilation, so provided scope would
+            be great for this, but with it is left out from widgetset compilation by
             vaadin plugin -->
             <!-- <scope>provided</scope> -->
         </dependency>
@@ -234,8 +234,8 @@
             <groupId>org.vaadin.addons</groupId>
             <artifactId>g-leaflet-mouseposition</artifactId>
             <version>${project.version}</version>
-            <!-- Only needed during widgetset compilation, so provided scope would 
-            be great for this, but with it is left out from widgetset compilation by 
+            <!-- Only needed during widgetset compilation, so provided scope would
+            be great for this, but with it is left out from widgetset compilation by
             vaadin plugin -->
             <!-- <scope>provided</scope> -->
         </dependency>
