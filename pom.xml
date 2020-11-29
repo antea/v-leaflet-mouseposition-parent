@@ -6,7 +6,7 @@
 
     <artifactId>v-leaflet-mouseposition-parent</artifactId>
     <groupId>org.vaadin.addons</groupId>
-    <version>0.0.5</version>
+    <version>0.0.6</version>
     <packaging>pom</packaging>
 
     <name>Mouse position Vaadin and GWT plugin for Leaflet.</name>
@@ -25,6 +25,14 @@
             <email>chiccorusso@gmail.com</email>
         </contributor>
     </contributors>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub antea Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/antea/v-leaflet-mouseposition-parent</url>
+        </repository>
+    </distributionManagement>
 
     <properties>
         <project.build.encoding>UTF-8</project.build.encoding>

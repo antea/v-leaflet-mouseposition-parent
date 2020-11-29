@@ -6,7 +6,7 @@
     <groupId>org.vaadin.addons</groupId>
     <packaging>jar</packaging>
     <name>g-leaflet-mouseposition</name>
-    <version>0.0.5</version>
+    <version>0.0.6</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,6 +24,14 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub antea Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/antea/v-leaflet-mouseposition-parent</url>
+        </repository>
+    </distributionManagement>
 
     <build>
 

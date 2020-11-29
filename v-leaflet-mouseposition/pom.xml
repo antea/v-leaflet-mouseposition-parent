@@ -6,12 +6,12 @@
     <groupId>org.vaadin.addons</groupId>
     <packaging>jar</packaging>
     <name>V-Leaflet MousePosition extensions</name>
-    <version>0.0.5</version>
+    <version>0.0.6</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <vaadin.version>7.6.8</vaadin.version>
-        <v-leaflet-version>1.0.3</v-leaflet-version>
+        <vaadin.version>8.4.2</vaadin.version>
+        <v-leaflet-version>2.0.6</v-leaflet-version>
     </properties>
 
     <organization>
@@ -27,14 +27,22 @@
         </license>
     </licenses>
 
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub antea Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/antea/v-leaflet-mouseposition-parent</url>
+        </repository>
+    </distributionManagement>
+
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                 </configuration>
             </plugin>
             <plugin>
