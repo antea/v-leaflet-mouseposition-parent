@@ -29,7 +29,7 @@
         <repository>
             <id>github</id>
             <name>GitHub antea Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/antea/v-leaflet-mouseposition-parent</url>
+            <url>https://maven.pkg.github.com/antea/packages</url>
         </repository>
     </distributionManagement>
 
