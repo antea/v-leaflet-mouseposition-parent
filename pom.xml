@@ -6,7 +6,7 @@
 
     <artifactId>v-leaflet-mouseposition-parent</artifactId>
     <groupId>org.vaadin.addons</groupId>
-    <version>0.0.6</version>
+    <version>0.0.7</version>
     <packaging>pom</packaging>
 
     <name>Mouse position Vaadin and GWT plugin for Leaflet.</name>
